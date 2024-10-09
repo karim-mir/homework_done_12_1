@@ -5,7 +5,7 @@ from typing import Dict, List
 
 #Создаем хэндлер
 handler = logging.FileHandler('logs.log', mode='w', encoding='utf-8')
-formatter = logging.Formatter('%(asctime)s:%(levelname)s:%(name)s:%(message)s')
+formatter = logging.Formatter('%(asctime)s:%(module)s:%(levelname)s:%(name)s:%(message)s')
 handler.setFormatter(formatter)
 
 # Настраиваем логирование
