@@ -3,16 +3,15 @@ import logging
 import os
 from typing import Dict, List
 
-#Создаем хэндлер
-handler = logging.FileHandler('logs.log', mode='w', encoding='utf-8')
-formatter = logging.Formatter('%(asctime)s:%(module)s:%(levelname)s:%(name)s:%(message)s')
+# Создаем хэндлер
+handler = logging.FileHandler("logs.log", mode="w", encoding="utf-8")
+formatter = logging.Formatter(
+    "%(asctime)s:%(module)s:%(levelname)s:%(name)s:%(message)s"
+)
 handler.setFormatter(formatter)
 
 # Настраиваем логирование
-logging.basicConfig(
-    level=logging.INFO,
-    handlers=[handler]
-)
+logging.basicConfig(level=logging.INFO, handlers=[handler])
 
 logger = logging.getLogger()
 
