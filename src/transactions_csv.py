@@ -22,5 +22,6 @@ def get_financial_transactions(path: str) -> List[Dict]:
     return transactions
 
 
-path = "transactions.csv"
-transactions = get_financial_transactions(path)
+if __name__ == "__main__":
+    path = "transactions.csv"
+    transactions = get_financial_transactions(path)
