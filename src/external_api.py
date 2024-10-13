@@ -12,6 +12,7 @@ url = "https://api.apilayer.com/currency_data/convert"
 
 
 def convert_to_rub(amount: float, currency: str) -> float:
+    "Функция для конвертации валют в рубли"
     if currency == "RUB":
         return round(amount, 2)
 
