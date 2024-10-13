@@ -7,6 +7,8 @@ path = "C:/Users/zheba/AppData/Local/Programs/Python/Python312/homework_done_12_
 
 
 def get_financial_transactions_operations(path: str) -> List[Dict]:
+    """Функция для считывания финансовых операций из Excel принимает путь к файлу Excel в качестве аргумента
+    и выдает список словарей с транзакциями"""
     # Чтение Excel файла в DataFrame
     df = pd.read_excel(path)
     operations = []

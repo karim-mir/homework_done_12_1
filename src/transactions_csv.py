@@ -3,6 +3,7 @@ from typing import Dict, List
 
 
 def get_financial_transactions(path: str) -> List[Dict]:
+    """Функция принимает путь к файлу CSV в качестве аргумента и выдает список словарей с транзакциями"""
     transactions = []
     with open(path, mode="r", newline="", encoding="utf-8") as file:
         reader = csv.DictReader(file, delimiter=";")  # Указываем ; как разделитель
